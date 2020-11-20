@@ -9,7 +9,7 @@ let emailHelp=document.getElementById("emailHelp");
 let btn=document.getElementsByClassName("btn");
 
 function emailvalidate()
-{let regexp=/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+{let regexp=/^([a-zA-Z0-9\.\-]+)@([a-zA-Z0-9\-]+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/;
     if(regexp.test(Email.value))
     {
         Email.style.borderColor=" blue";
